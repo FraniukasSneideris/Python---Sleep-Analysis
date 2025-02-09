@@ -93,6 +93,18 @@ print(f"The insomnia ratio for normal BMI is {bmi_insomnia_ratios['Normal']}")
 print(f"The insomnia ratio for overweight BMI is {bmi_insomnia_ratios['Overweight']}")
 print(f"The insomnia ratio for obese BMI is {bmi_insomnia_ratios['Obese']}")
 ```
+
+### Approach
+1. **Data Analysis Using GroupBy:**  
+   - I used `groupby()` to compute the mean values for sleep duration and sleep quality by occupation.  
+   - Then I sorted these averages and selected the occupation with the lowest sleep duration (`lowest_sleep_occ`) and lowest sleep quality (`lowest_sleep_quality_occ`).  
+
+2. **Comparing Occupations:**  
+   - I defined a simple `compare_occupation()` function that checks whether the same occupation has the lowest sleep duration and sleep quality, returning a boolean (`same_occ`).  
+
+3. **BMI and Insomnia Ratios:**  
+   - I defined a function `calculate_insomnia_ratios()` that iterates over BMI categories (`Normal`, `Overweight`, `Obese`). For each category, it calculates the ratio of individuals diagnosed with insomnia, rounding it to two decimal places.  
+
 ### Output:
 ```bash
 The occupation with lowest average sleep is: Sales Representative
@@ -105,21 +117,11 @@ The insomnia ratio for overweight BMI is 0.43
 The insomnia ratio for obese BMI is 0.4
 ```
 
-## Data Visualizations
+## Data Visualization
+Though the primary objectives results can be obtained without visualization, I decided to go a little bit further and see what a few graphs could tell.
 
-This project incorporates the following visual elements to enrich the data analysis:
-
-1. **Bar Charts:**
-   - Average sleep duration and sleep quality by occupation.
-
-2. **Scatter Plot:**
-   - Physical activity vs. sleep duration to explore potential correlations.
-
-3. **Heatmap:**
-   - Stress level and sleep quality relationship displayed using a gradient.
-
-4. **Pie Charts:**
-   - Distribution of sleep disorders by BMI category, displayed side by side.
+###
+![image](https://github.com/user-attachments/assets/215df963-d5b8-4ac0-a83e-c66ad0714fad)
 
 ---
 
