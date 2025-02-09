@@ -134,7 +134,7 @@ Here we can see that subjects with overweight and obesity tend to have some slee
 ### Stress Level vs. Quality of Sleep
 ![image](https://github.com/user-attachments/assets/f00d524a-11cb-4f08-94b5-929a24b880bf)
 This one is a no-brainer, right? 
-It may be even silly to mention this, but if this does not show that the more stress we have, the poor our quality of sleep (and life) will be, I don't know what will. 
+It may be even silly to mention this, but if this does not show that the more stress we have, the poorer our quality of sleep (and life) will be, I don't know what will. 
 
 
 ### Sleep Duration and Quality of Sleep by Gender
