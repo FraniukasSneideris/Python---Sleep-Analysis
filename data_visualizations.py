@@ -49,17 +49,28 @@ plt.show()
 
 
 # Sleep Duration and Quality of Sleep by Gender and BMI Category
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+bmi_categories = ['Normal', 'Overweight', 'Obese']
 
-data1 = pd.DataFrame({'Gender': df['Gender'], 'Sleep Duration': df['Sleep Duration']})
-sns.barplot(x='Gender', y='Sleep Duration', data=data1, ax=ax1)
-ax1.set_title('Sleep Duration by Gender')
-ax1.tick_params(axis='x', rotation=90)
+fig, axes = plt.subplots(3, 2, figsize=(14, 15))
+fig.suptitle("Sleep Data by BMI Categories", fontsize=16)
 
-data2 = pd.DataFrame({'Gender': df['Gender'], 'Quality of Sleep': df['Quality of Sleep']})
-sns.barplot(x='Gender', y='Quality of Sleep', data=data2, ax=ax2)
-ax2.set_title('Quality of Sleep by Gender')
-ax2.tick_params(axis='x', rotation=90)
+for i, bmi in enumerate(bmi_categories):
+    # Data by BMI category
+    bmi_data = df[df['BMI Category'] == bmi]
+    
+    # Plot Sleep Duration by Gender
+    sns.barplot(
+        x='Gender', y='Sleep Duration', data=bmi_data, ax=axes[i, 0]
+    )
+    axes[i, 0].set_title(f'Sleep Duration ({bmi} BMI)')
+    axes[i, 0].tick_params(axis='x', rotation=90)
+    
+    # Plot Quality of Sleep by Gender
+    sns.barplot(
+        x='Gender', y='Quality of Sleep', data=bmi_data, ax=axes[i, 1]
+    )
+    axes[i, 1].set_title(f'Quality of Sleep ({bmi} BMI)')
+    axes[i, 1].tick_params(axis='x', rotation=90)
 
-plt.tight_layout()
+plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust to fit titles
 plt.show()
