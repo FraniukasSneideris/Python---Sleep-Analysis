@@ -125,11 +125,18 @@ Though the primary objectives results can be obtained without visualization, I d
 ![image](https://github.com/user-attachments/assets/215df963-d5b8-4ac0-a83e-c66ad0714fad)
 Here we can see that indeed, for the occupations included in this survey, the Sales Representative is the one that has the worst sleep. On the other hand, Engineers seem to be sleeping better. The cause of this remains a mistery, but I would assume this might be related either to economic factors, work-life balance, work circumstances, private circumstances, and a combination of all those.
 
-### Sleep Disorders and Insomnia Ratio by BMI Category
+### Sleep Disorders by BMI Category
 ![image](https://github.com/user-attachments/assets/0d440737-c405-473a-ac55-c9558f303e70)
-![image](https://github.com/user-attachments/assets/25d4c948-7e22-41c4-8ed6-6b674cf32eb6)
+Here we can see that subjects with overweight and obesity tend to have some sleep disorder (either insomnia or sleep apnea), with only 5.4% of subjects in the Normal BMI group having a sleep disorder, 87.1% of subjects in the Overweight BMI group, and 100% in the Obese group. This comes as no surprise, since it is widely known that overweight and obesity may change metabolism and/or sleep-wake cycles in such a way that causes sleep quality to deteriorate.
 
+### Stress Level vs. Quality of Sleep
+![image](https://github.com/user-attachments/assets/f00d524a-11cb-4f08-94b5-929a24b880bf)
+This one is a no-brainer, right? 
+It may be even silly to mention this, but if this does not show that the more stress we have, the poor our quality of sleep (and life) will be, I don't know what will. 
 
+### Sleep Duration and Quality of Sleep by Gender
+![image](https://github.com/user-attachments/assets/e7301aa8-088b-4cfa-9d9a-992e6f5c9158)
+I left this one for the end, and also I wouldn't pay too much attention to it.. Why? Because a) the data is limited, b) the data does not show significance difference, c) 
 
 ---
 
