@@ -119,9 +119,17 @@ The insomnia ratio for obese BMI is 0.4
 
 ## Data Visualization
 Though the primary objectives results can be obtained without visualization, I decided to go a little bit further and see what a few graphs could tell.
+*Please note*: The code for each graph is in the file *'data_visualizations.py'*.
 
-###
+### Sleep Duration and Quality of Sleep by Occupation
 ![image](https://github.com/user-attachments/assets/215df963-d5b8-4ac0-a83e-c66ad0714fad)
+Here we can see that indeed, for the occupations included in this survey, the Sales Representative is the one that has the worst sleep. On the other hand, Engineers seem to be sleeping better. The cause of this remains a mistery, but I would assume this might be related either to economic factors, work-life balance, work circumstances, private circumstances, and a combination of all those.
+
+### Sleep Disorders and Insomnia Ratio by BMI Category
+![image](https://github.com/user-attachments/assets/0d440737-c405-473a-ac55-c9558f303e70)
+![image](https://github.com/user-attachments/assets/25d4c948-7e22-41c4-8ed6-6b674cf32eb6)
+
+
 
 ---
 
