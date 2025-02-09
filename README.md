@@ -135,8 +135,27 @@ This one is a no-brainer, right?
 It may be even silly to mention this, but if this does not show that the more stress we have, the poor our quality of sleep (and life) will be, I don't know what will. 
 
 ### Sleep Duration and Quality of Sleep by Gender
-![image](https://github.com/user-attachments/assets/e7301aa8-088b-4cfa-9d9a-992e6f5c9158)
-I left this one for the end, and also I wouldn't pay too much attention to it.. Why? Because a) the data is limited, b) the data does not show significance difference, c) 
+![image](https://github.com/user-attachments/assets/37271f01-740b-4479-bff6-37ec02dbc825)
+For this one is important to show the distribution of males and females in the survey:
+```python
+count_by_gender = df.groupby('Gender')['Gender'].count()
+count_by_gender_bmi = df.groupby(['Gender', 'BMI Category'])['Gender'].count()
+```
+```bash
+Gender
+Female    185
+Male      189
+Name: Gender, dtype: int64
+
+Gender  BMI Category
+Female  Normal           78
+        Obese             1
+        Overweight      106
+Male    Normal          138
+        Obese             9
+        Overweight       42
+Name: Gender, dtype: int64
+```
 
 ---
 
